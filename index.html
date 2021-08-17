@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <!-- Tailwind stylesheet -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="sm:text-5xl text-3xl text-center font-semibold text-pink-600 mt-12">Simple Calculator</h1>
+    </header>
+    <main>
+        <section class="conatiner">
+            <div class="w-2/4 mx-auto">
+                <div class="bg-gray-200 w-2/4 grid grid-cols-4 gap-4 mt-8 p-8 rounded shadow-lg mx-auto btn-wrapper">
+                    <input id="screen" readonly
+                        class="col-span-4 p-4 outline-none rounded mb-4 font-semibold text-3xl text-right" type="text"
+                        placeholder="0">
+                    <button
+                        class="bg-pink-900 btn text-white col-span-2 text-center font-semibold rounded shadow-lg p-2 cursor-pointer">AC</button>
+                    <button id="delete-btn" onclick="deleteLast()"
+                        class="bg-pink-900 text-white col-span-2 text-center font-semibold rounded shadow-lg p-2 cursor-pointer">
+                        DEL</button>
+                    <button id="btn7"
+                        class="bg-pink-900 btn text-white text-center font-semibold rounded shadow-lg p-2 cursor-pointer">
+                        7
+                    </button>
+                    <button id="btn8"
+                        class="bg-pink-900 btn text-white text-center font-semibold rounded shadow-lg p-2 cursor-pointer">
+                        8</button>
+                    <button id="btn9"
+                        class="bg-pink-900 btn text-white text-center font-semibold rounded shadow-lg p-2 cursor-pointer">
+                        9</button>
+                    <button id="button-divided"
+                        class="bg-pink-900 btn text-white text-center font-semibold rounded shadow-lg p-2 cursor-pointer">
+                        /</button>
+                    <button id="btn4"
+                        class="bg-pink-900 btn text-white text-center font-semibold rounded shadow-lg p-2 cursor-pointer">
+                        4</button>
+                    <button id="btn5"
+                        class="bg-pink-900 btn text-white text-center font-semibold rounded shadow-lg p-2 cursor-pointer">
+                        5</button>
+                    <button id="btn6"
+                        class="bg-pink-900 btn text-white text-center font-semibold rounded shadow-lg p-2 cursor-pointer">
+                        6</button>
+                    <button id="multiply"
+                        class="bg-pink-900 btn text-white text-center font-semibold rounded shadow-lg p-2 cursor-pointer">
+                        *</button>
+                    <button id="btn1"
+                        class="bg-pink-900 btn text-white text-center font-semibold rounded shadow-lg p-2 cursor-pointer">
+                        1</button>
+                    <button id="btn2"
+                        class="bg-pink-900 btn text-white text-center font-semibold rounded shadow-lg p-2 cursor-pointer">
+                        2</button>
+                    <button id="btn3"
+                        class="bg-pink-900 btn text-white text-center font-semibold rounded shadow-lg p-2 cursor-pointer">
+                        3</button>
+                    <button id="minus"
+                        class="bg-pink-900 btn text-white text-center font-semibold rounded shadow-lg p-2 cursor-pointer">
+                        -</button>
+                    <button id="btn0"
+                        class="bg-pink-900 btn text-white text-center font-semibold rounded shadow-lg p-2 cursor-pointer">
+                        0</button>
+                    <button id="btn-point"
+                        class="bg-pink-900 btn text-white text-center font-semibold rounded shadow-lg p-2 cursor-pointer">
+                        .</button>
+                    <button id="btn-equal"
+                        class="bg-pink-900 text-white text-center font-semibold rounded shadow-lg p-2 cursor-pointer">
+                        =</button>
+                    <button id="btn-plus"
+                        class="bg-pink-900 btn text-white text-center font-semibold rounded shadow-lg p-2 cursor-pointer">
+                        +</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
